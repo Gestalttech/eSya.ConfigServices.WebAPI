@@ -13,3 +13,4 @@ D:\Projects\eSyaProjects2022\eSya.ConfigServices.WebAPI\eSya.ConfigServices.IF\e
 D:\Projects\eSyaProjects2022\eSya.ConfigServices.WebAPI\eSya.ConfigServices.IF\eSya.ConfigServices.IF\bin\Debug\net6.0\eSya.ConfigServices.DO.pdb
 D:\Projects\eSyaProjects2022\eSya.ConfigServices.WebAPI\eSya.ConfigServices.IF\eSya.ConfigServices.IF\obj\Debug\net6.0\eSya.ConfigServices.IF.csproj.AssemblyReference.cache
 D:\Projects\eSyaProjects2022\eSya.ConfigServices.WebAPI\eSya.ConfigServices.IF\eSya.ConfigServices.IF\obj\Debug\net6.0\eSya.ConfigServices.IF.csproj.CopyComplete
+D:\Projects\eSyaProjects2022\eSya.ConfigServices.WebAPI\eSya.ConfigServices.IF\eSya.ConfigServices.IF\obj\Debug\net6.0\eSya.ConfigServices.IF.sourcelink.json

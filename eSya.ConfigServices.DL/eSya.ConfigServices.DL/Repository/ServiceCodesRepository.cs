@@ -179,7 +179,12 @@ namespace eSya.ConfigServices.DL.Repository
                                     internalcode = pattern.IntScpattern + digits;
                                 }
 
-
+                                var svclassstatus = db.GtEssrcls.Where(x => x.ServiceClassId == obj.ServiceClassId).FirstOrDefault();
+                                if (svclassstatus != null)
+                                {
+                                    svclassstatus.UsageStatus = true;
+                                }
+                                await db.SaveChangesAsync();
                                 var servicecode = new GtEssrm
                                 {
                                     ServiceId = newServiceId,
