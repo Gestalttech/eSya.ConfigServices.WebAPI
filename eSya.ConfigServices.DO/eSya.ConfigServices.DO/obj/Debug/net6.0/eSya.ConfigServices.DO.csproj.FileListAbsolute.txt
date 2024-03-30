@@ -1,0 +1,11 @@
+D:\Projects\eSyaProjects2022\eSya.ConfigServices.WebAPI\eSya.ConfigServices.DO\eSya.ConfigServices.DO\bin\Debug\net6.0\eSya.ConfigServices.DO.deps.json
+D:\Projects\eSyaProjects2022\eSya.ConfigServices.WebAPI\eSya.ConfigServices.DO\eSya.ConfigServices.DO\bin\Debug\net6.0\eSya.ConfigServices.DO.dll
+D:\Projects\eSyaProjects2022\eSya.ConfigServices.WebAPI\eSya.ConfigServices.DO\eSya.ConfigServices.DO\bin\Debug\net6.0\eSya.ConfigServices.DO.pdb
+D:\Projects\eSyaProjects2022\eSya.ConfigServices.WebAPI\eSya.ConfigServices.DO\eSya.ConfigServices.DO\obj\Debug\net6.0\eSya.ConfigServices.DO.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\eSyaProjects2022\eSya.ConfigServices.WebAPI\eSya.ConfigServices.DO\eSya.ConfigServices.DO\obj\Debug\net6.0\eSya.ConfigServices.DO.AssemblyInfoInputs.cache
+D:\Projects\eSyaProjects2022\eSya.ConfigServices.WebAPI\eSya.ConfigServices.DO\eSya.ConfigServices.DO\obj\Debug\net6.0\eSya.ConfigServices.DO.AssemblyInfo.cs
+D:\Projects\eSyaProjects2022\eSya.ConfigServices.WebAPI\eSya.ConfigServices.DO\eSya.ConfigServices.DO\obj\Debug\net6.0\eSya.ConfigServices.DO.csproj.CoreCompileInputs.cache
+D:\Projects\eSyaProjects2022\eSya.ConfigServices.WebAPI\eSya.ConfigServices.DO\eSya.ConfigServices.DO\obj\Debug\net6.0\eSya.ConfigServices.DO.dll
+D:\Projects\eSyaProjects2022\eSya.ConfigServices.WebAPI\eSya.ConfigServices.DO\eSya.ConfigServices.DO\obj\Debug\net6.0\refint\eSya.ConfigServices.DO.dll
+D:\Projects\eSyaProjects2022\eSya.ConfigServices.WebAPI\eSya.ConfigServices.DO\eSya.ConfigServices.DO\obj\Debug\net6.0\eSya.ConfigServices.DO.pdb
+D:\Projects\eSyaProjects2022\eSya.ConfigServices.WebAPI\eSya.ConfigServices.DO\eSya.ConfigServices.DO\obj\Debug\net6.0\ref\eSya.ConfigServices.DO.dll

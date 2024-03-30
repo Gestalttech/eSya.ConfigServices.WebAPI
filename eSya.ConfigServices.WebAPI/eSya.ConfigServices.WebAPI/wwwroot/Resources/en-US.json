@@ -1,0 +1,14 @@
+{
+
+  "W0106": "Service already Exist",
+  "W0107": "Service Description already Exist",
+  "W0108": "Service Short Description already Exist",
+  "W0109": "Internal Service Code already Exist",
+
+
+
+  "S0001": "Saved Sucessfully",
+  "S0002": "Updated Sucessfully",
+  "S0003": "Activated Successfully",
+  "S0004": "De Activated Successfully"
+}
