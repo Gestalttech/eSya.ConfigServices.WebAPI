@@ -23,7 +23,6 @@ namespace eSya.ConfigServices.DL.Entities
         public virtual DbSet<GtEsopcl> GtEsopcls { get; set; } = null!;
         public virtual DbSet<GtEspasm> GtEspasms { get; set; } = null!;
         public virtual DbSet<GtEssrbl> GtEssrbls { get; set; } = null!;
-        public virtual DbSet<GtEssrcg> GtEssrcgs { get; set; } = null!;
         public virtual DbSet<GtEssrcl> GtEssrcls { get; set; } = null!;
         public virtual DbSet<GtEssrgr> GtEssrgrs { get; set; } = null!;
         public virtual DbSet<GtEssrm> GtEssrms { get; set; } = null!;
@@ -223,37 +222,6 @@ namespace eSya.ConfigServices.DL.Entities
                 entity.Property(e => e.ModifiedTerminal).HasMaxLength(50);
 
                 entity.Property(e => e.ServiceCost).HasColumnType("numeric(18, 6)");
-            });
-
-            modelBuilder.Entity<GtEssrcg>(entity =>
-            {
-                entity.HasKey(e => e.ServiceClassId);
-
-                entity.ToTable("GT_ESSRCG");
-
-                entity.Property(e => e.ServiceClassId)
-                    .ValueGeneratedNever()
-                    .HasColumnName("ServiceClassID");
-
-                entity.Property(e => e.CreatedOn).HasColumnType("datetime");
-
-                entity.Property(e => e.CreatedTerminal).HasMaxLength(50);
-
-                entity.Property(e => e.FormId)
-                    .HasMaxLength(10)
-                    .IsUnicode(false)
-                    .HasColumnName("FormID");
-
-                entity.Property(e => e.IntSccode).HasColumnName("IntSCCode");
-
-                entity.Property(e => e.IntScpattern)
-                    .HasMaxLength(10)
-                    .IsUnicode(false)
-                    .HasColumnName("IntSCPattern");
-
-                entity.Property(e => e.ModifiedOn).HasColumnType("datetime");
-
-                entity.Property(e => e.ModifiedTerminal).HasMaxLength(50);
             });
 
             modelBuilder.Entity<GtEssrcl>(entity =>

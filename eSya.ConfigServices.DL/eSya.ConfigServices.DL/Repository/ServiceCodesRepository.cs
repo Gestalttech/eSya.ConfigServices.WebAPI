@@ -166,18 +166,20 @@ namespace eSya.ConfigServices.DL.Repository
                             }
                             else
                             {
-                                var internalcode = obj.InternalServiceCode;
+                                //var internalcode = obj.InternalServiceCode;
+                               // var newServiceId = db.GtEssrms.Select(a => (int)a.ServiceId).DefaultIfEmpty().Max() + 1;
+                                // If internal service code pattern is defined need to remove and should be unique InternalServiceCode
+                                //var pattern = db.GtEssrcgs.Where(w => w.ServiceClassId == obj.ServiceClassId && w.ActiveStatus).FirstOrDefault();
+                                //if (pattern != null)
+                                //{
+                                //    var internalserId = db.GtEssrms.Where(w => w.ServiceClassId == obj.ServiceClassId).Count() + 1;
+                                //    string digits = (Math.Pow(10, pattern.IntSccode)).ToString();
+                                //    digits = digits + internalserId.ToString();
+                                //    digits = digits.Substring(digits.Length - pattern.IntSccode, pattern.IntSccode);
+                                //    internalcode = pattern.IntScpattern + digits;
+                                //}
+
                                 var newServiceId = db.GtEssrms.Select(a => (int)a.ServiceId).DefaultIfEmpty().Max() + 1;
-                                // If internal service code pattern is defined
-                                var pattern = db.GtEssrcgs.Where(w => w.ServiceClassId == obj.ServiceClassId && w.ActiveStatus).FirstOrDefault();
-                                if (pattern != null)
-                                {
-                                    var internalserId = db.GtEssrms.Where(w => w.ServiceClassId == obj.ServiceClassId).Count() + 1;
-                                    string digits = (Math.Pow(10, pattern.IntSccode)).ToString();
-                                    digits = digits + internalserId.ToString();
-                                    digits = digits.Substring(digits.Length - pattern.IntSccode, pattern.IntSccode);
-                                    internalcode = pattern.IntScpattern + digits;
-                                }
 
                                 var svclassstatus = db.GtEssrcls.Where(x => x.ServiceClassId == obj.ServiceClassId).FirstOrDefault();
                                 if (svclassstatus != null)
@@ -185,6 +187,14 @@ namespace eSya.ConfigServices.DL.Repository
                                     svclassstatus.UsageStatus = true;
                                 }
                                 await db.SaveChangesAsync();
+
+                               
+                                    var InternalServiceCodeExist = db.GtEssrms.Where(w => w.InternalServiceCode == obj.InternalServiceCode).Count();
+                                    if (InternalServiceCodeExist > 0)
+                                    {
+                                        return new DO_ReturnParameter() { Status = false, StatusCode = "W0109", Message = string.Format(_localizer[name: "W0109"]) };
+                                    }
+                                
                                 var servicecode = new GtEssrm
                                 {
                                     ServiceId = newServiceId,
@@ -193,7 +203,7 @@ namespace eSya.ConfigServices.DL.Repository
                                     ServiceDesc = obj.ServiceDesc,
                                     ServiceShortDesc = obj.ServiceShortDesc,
                                     Gender = obj.Gender,
-                                    InternalServiceCode = internalcode,
+                                    InternalServiceCode = obj.InternalServiceCode,
                                     ActiveStatus = obj.ActiveStatus,
                                     FormId = obj.FormId,
                                     CreatedBy = obj.UserID,
