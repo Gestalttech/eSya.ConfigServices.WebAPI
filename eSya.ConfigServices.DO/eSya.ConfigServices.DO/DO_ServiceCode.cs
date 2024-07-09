@@ -41,7 +41,7 @@ namespace eSya.ConfigServices.DO
         public int ServiceGroupId { get; set; }
         public int ServiceTypeId { get; set; }
         public string ServiceGroupDesc { get; set; }
-        public string ServiceCriteria { get; set; }
+        public int ServiceCriteria { get; set; }
         public int PrintSequence { get; set; }
         public bool ActiveStatus { get; set; }
 
