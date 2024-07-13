@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("eSya.ConfigServices.WebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cf939e1bc5dacbf3dace86effa540e657af91f6e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1bc74dc9c110ad22db27bc83e666722fa47d004d")]
 [assembly: System.Reflection.AssemblyProductAttribute("eSya.ConfigServices.WebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("eSya.ConfigServices.WebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
