@@ -35,8 +35,9 @@ builder.Services.Configure<RequestLocalizationOptions>(options =>
 {
     var supportedCultures = new[]
     {
-                   //new CultureInfo(name:"en-IN"),
+                    //new CultureInfo(name:"en-IN"),
                     new CultureInfo(name:"en-US"),
+                    new CultureInfo("hi-IN"),
                     new CultureInfo(name:"ar-EG"),
                 };
     options.DefaultRequestCulture = new Microsoft.AspNetCore.Localization.RequestCulture(culture: supportedCultures[0], uiCulture: supportedCultures[0]);
@@ -76,7 +77,7 @@ if (app.Environment.IsDevelopment())
 
 //Localization
 
-var supportedCultures = new[] { /*"en-IN", */ "en-US", "ar-EG" };
+var supportedCultures = new[] { /*"en-IN", */ "en-US", "hi-IN", "ar-EG" };
 var localizationOptions = new RequestLocalizationOptions()
     .SetDefaultCulture(supportedCultures[0])
     .AddSupportedCultures(supportedCultures)
